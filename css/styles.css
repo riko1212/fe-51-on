@@ -26,8 +26,24 @@ p {
   color: purple;
 }
 
-.text {
+.text,
+.header-link {
   color: violet;
+}
+
+.header-list.list {
+}
+
+.header-list .list {
+}
+
+/* [href="https://www.google.com/"]
+{
+  color: green;
+} */
+
+.header-tel + button {
+  background-color: blueviolet;
 }
 
 /*
