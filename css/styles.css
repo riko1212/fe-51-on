@@ -1,0 +1,43 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+p {
+  color: teal;
+}
+
+* {
+  color: tomato;
+}
+
+#text {
+  color: purple;
+}
+
+#text1 {
+  color: purple;
+}
+
+.text {
+  color: violet;
+}
+
+/*
+ * - Универсальний селектор
+ тег
+ ID
+ класс
+ атрибут
+ потомка
+ ребенка
+ соседа
+
+ */
