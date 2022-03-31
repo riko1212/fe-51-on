@@ -53,6 +53,7 @@ body {
   line-height: 1.33;
   letter-spacing: 0.09em;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .after-title {
@@ -134,6 +135,7 @@ body {
 
 .about-pre-title {
   color: #303030;
+  text-transform: capitalize;
 }
 
 .about-title {
