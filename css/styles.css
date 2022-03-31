@@ -18,6 +18,19 @@ body {
   text-decoration: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 .pre-title {
   font-weight: 600;
   font-size: 11px;
@@ -189,8 +202,107 @@ body {
   color: #303030;
 }
 .reasons-title {
-  color: #303030;
+  color: var(--second-title-color);
 }
 .reasons-after-title {
   color: #555555;
+}
+
+/*-------------- Masters------------ */
+
+.masters-pre-title {
+  color: #303030;
+}
+
+.masters-title {
+  color: var(--second-title-color);
+}
+
+.masters-item-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.39;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #303030;
+}
+.masters-item-text {
+  font-size: 14px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: var(--accent-color);
+}
+
+/*-------------- GALLERY------------ */
+
+.gallery-pre-title {
+  color: #303030;
+}
+
+/*-------------- ONLINE------------ */
+
+.online {
+  background-color: #303030;
+}
+
+.online-title {
+  color: var(--first-title-color);
+}
+
+/*-------------- CONTACTS------------ */
+
+.contacts {
+  background-color: #303030;
+}
+
+.contacts-title {
+  color: var(--first-title-color);
+}
+
+.contacts-address {
+  font-style: normal;
+}
+
+.contacts-link {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+
+.contacts-time-title {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.contacts-time-text {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+
+/*-------------- FOOTER------------ */
+
+.footer-copy {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+
+  color: #9da4bd;
+}
+
+.footer-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: #303030;
 }
