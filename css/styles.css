@@ -5,7 +5,29 @@
   --first-btn-color: #ffffff;
   --second-btn-color: #303030;
   --accent-color: #ff6c00;
+  --typical-gap: 20px;
 }
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
 }
@@ -16,6 +38,14 @@ body {
 
 .link {
   text-decoration: none;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid red;
 }
 
 .visually-hidden {
@@ -66,6 +96,8 @@ body {
 
 .header {
   background-color: gray;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .header-link,
@@ -110,10 +142,12 @@ body {
 
 .hero-content {
   background-color: #303030;
+  padding: 272px 0 206px 96px;
 }
 
 .hero-pre-title {
   color: rgba(157, 164, 189, 0.6);
+  margin-bottom: var(--typical-gap);
 }
 
 .hero-title {
@@ -122,6 +156,7 @@ body {
   line-height: 1.18;
   letter-spacing: 0.05em;
   color: var(--first-title-color);
+  margin-bottom: var(--typical-gap);
 }
 
 .hero-after-title {
@@ -129,21 +164,29 @@ body {
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: #9da4bd;
+  max-width: 400px;
 }
 
 /*-------------- ABOUT------------ */
 
+.about {
+  padding-top: 139px;
+  padding-bottom: 121px;
+}
 .about-pre-title {
   color: #303030;
   text-transform: capitalize;
+  margin-bottom: var(--typical-gap);
 }
 
 .about-title {
   color: var(--second-title-color);
+  margin-bottom: var(--typical-gap);
 }
 
 .about-after-title {
   color: #555555;
+  margin-bottom: var(--typical-gap);
 }
 
 .about-text {
@@ -151,6 +194,7 @@ body {
   line-height: 1.86;
   letter-spacing: 0.02em;
   color: #555555;
+  margin-bottom: 40px;
 }
 
 .about-btn {
@@ -161,13 +205,25 @@ body {
 
 .prices {
   background-color: #303030;
+  padding-top: 130px;
+  padding-bottom: 130px;
 }
 .prices-pre-title {
   color: rgba(157, 164, 189, 0.6);
+  margin-bottom: var(--typical-gap);
 }
 
 .prices-title {
   color: var(--first-title-color);
+  margin-bottom: 44px;
+}
+
+.prices-list {
+  border: 1px solid #ffffff;
+  padding: 30px 40px;
+}
+.prices-item {
+  margin-bottom: var(--typical-gap);
 }
 
 .prices-item-text {
@@ -183,6 +239,17 @@ body {
 
 /*-------------- REASONS------------ */
 
+.reasons {
+  padding-top: 114px;
+  padding-bottom: 137px;
+}
+
+.reasons-item {
+  width: 170px;
+  height: 133px;
+  border: 1px solid #000000;
+  padding: 20px 24px;
+}
 .reasons-item-count {
   font-weight: 700;
   font-size: 42px;
@@ -202,9 +269,11 @@ body {
 
 .reasons-pre-title {
   color: #303030;
+  margin-bottom: var(--typical-gap);
 }
 .reasons-title {
   color: var(--second-title-color);
+  margin-bottom: var(--typical-gap);
 }
 .reasons-after-title {
   color: #555555;
@@ -212,12 +281,22 @@ body {
 
 /*-------------- Masters------------ */
 
+.masters {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
 .masters-pre-title {
   color: #303030;
+  margin-bottom: var(--typical-gap);
 }
 
 .masters-title {
   color: var(--second-title-color);
+  margin-bottom: 44px;
+}
+
+.masters-img {
+  margin-bottom: 30px;
 }
 
 .masters-item-title {
@@ -227,6 +306,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: #303030;
+  margin-bottom: 8px;
 }
 .masters-item-text {
   font-size: 14px;
@@ -239,8 +319,13 @@ body {
 
 /*-------------- GALLERY------------ */
 
+.gallery {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
 .gallery-pre-title {
   color: #303030;
+  margin-bottom: 44px;
 }
 
 /*-------------- ONLINE------------ */
@@ -261,10 +346,16 @@ body {
 
 .contacts-title {
   color: var(--first-title-color);
+  margin-bottom: 40px;
 }
 
 .contacts-address {
   font-style: normal;
+  margin-bottom: 70px;
+}
+
+.contacts-item {
+  margin-bottom: var(--typical-gap);
 }
 
 .contacts-link {
@@ -281,6 +372,8 @@ body {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #ffffff;
+  display: block;
+  margin-bottom: var(--typical-gap);
 }
 
 .contacts-time-text {
@@ -292,6 +385,10 @@ body {
 
 /*-------------- FOOTER------------ */
 
+.footer {
+  padding-top: 57px;
+  padding-bottom: 55px;
+}
 .footer-copy {
   font-weight: 600;
   font-size: 11px;
