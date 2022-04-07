@@ -26,6 +26,7 @@ ol {
 
 img {
   display: block;
+  width: 100%;
 }
 
 body {
@@ -84,6 +85,10 @@ body {
   letter-spacing: 0.09em;
   text-transform: uppercase;
   cursor: pointer;
+  height: 40px;
+  min-width: 160px;
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
 }
 
 .after-title {
@@ -98,6 +103,27 @@ body {
   background-color: gray;
   padding-top: 32px;
   padding-bottom: 32px;
+}
+
+.header-logo {
+  margin-right: 70px;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.header-list {
+  display: flex;
+}
+
+.header-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.header-connect {
+  margin-left: auto;
 }
 
 .header-link,
@@ -123,9 +149,18 @@ body {
 
 .header-btn {
   color: var(--first-btn-color);
+  margin-left: 40px;
 }
 
 /*-------------- HERO------------ */
+
+.hero .container {
+  display: flex;
+}
+
+.hero-list {
+  width: 93px;
+}
 
 .hero-link {
   font-weight: 600;
@@ -143,6 +178,7 @@ body {
 .hero-content {
   background-color: #303030;
   padding: 272px 0 206px 96px;
+  flex-grow: 1;
 }
 
 .hero-pre-title {
@@ -168,6 +204,18 @@ body {
 }
 
 /*-------------- ABOUT------------ */
+
+.about .container {
+  display: flex;
+}
+.about-list {
+  display: flex;
+  margin-right: 64px;
+}
+
+.about-item + .about-item {
+  margin-left: 30px;
+}
 
 .about {
   padding-top: 139px;
@@ -218,12 +266,24 @@ body {
   margin-bottom: 44px;
 }
 
+.prices-wrap {
+  display: flex;
+  margin-bottom: 50px;
+}
+
 .prices-list {
   border: 1px solid #ffffff;
   padding: 30px 40px;
+  flex-grow: 1;
 }
 .prices-item {
   margin-bottom: var(--typical-gap);
+  display: flex;
+  justify-content: space-between;
+}
+
+.prices-item:last-child {
+  margin-bottom: 0;
 }
 
 .prices-item-text {
@@ -235,6 +295,8 @@ body {
 
 .prices-btn {
   color: #ffffff;
+  margin: 0 auto;
+  display: block;
 }
 
 /*-------------- REASONS------------ */
@@ -295,9 +357,24 @@ body {
   margin-bottom: 44px;
 }
 
+.masters-list {
+  display: flex;
+  margin-left: -30px;
+}
+
+.masters-item {
+  flex-basis: calc(100% / 3 - 30px);
+  width: calc((100% - 90px) / 3);
+  margin-left: 30px;
+}
+
 .masters-img {
   margin-bottom: 30px;
 }
+
+/* .masters-item + .masters-item {
+  margin-left: 30px;
+} */
 
 .masters-item-title {
   font-weight: 400;
@@ -326,6 +403,19 @@ body {
 .gallery-pre-title {
   color: #303030;
   margin-bottom: 44px;
+}
+
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-bottom: -30px;
+}
+
+.gallery-item {
+  width: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
 }
 
 /*-------------- ONLINE------------ */
