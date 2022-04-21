@@ -18,13 +18,20 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- header -->
     <header class="header">
       <div class="container">
-        <a class="header-logo" href="./index.html">
+        <a
+          class="header-logo animate__animated animate__bounce"
+          href="./index.html"
+        >
           <svg class="masters-soc-icon" width="66" height="55">
             <use href="./images/icons/symbol-defs.svg#icon-logo"></use>
           </svg>
@@ -55,7 +62,9 @@
           <a class="header-tel link" href="tel:+380441111111"
             >+38 044 111 11 11</a
           >
-          <button type="button" class="header-btn btn">Онлайн-запись</button>
+          <button type="button" class="header-btn btn" data-modal-open>
+            Онлайн-запись
+          </button>
         </div>
       </div>
     </header>
@@ -63,14 +72,17 @@
       <!-- Section-1 -->
       <section class="hero">
         <div class="container">
-          <ul class="hero-list list">
-            <li class="hero-item">
-              <a href="" target="_blank" class="hero-link link">Instagram</a>
-            </li>
-            <li class="hero-item">
-              <a href="" target="_blank" class="hero-link link">Youtube</a>
-            </li>
-          </ul>
+          <div class="hero-soc">
+            <ul class="hero-list list">
+              <li class="hero-item">
+                <a href="" target="_blank" class="hero-link link">Instagram</a>
+              </li>
+              <li class="hero-item">
+                <a href="" target="_blank" class="hero-link link">Youtube</a>
+              </li>
+            </ul>
+          </div>
+
           <div class="hero-content">
             <p lang="en" class="hero-pre-title pre-title">
               A hair salon for men in Kyiv
@@ -212,13 +224,24 @@
           <h2 class="masters-title title">Наши мастера</h2>
           <ul class="masters-list list">
             <li class="masters-item">
-              <img
-                src="./images/masters-img-1.jpeg"
-                alt="барбер стрижет клиента"
-                width="370"
-                height="346"
-                class="masters-img"
-              />
+              <div class="masters-cover-wrap">
+                <img
+                  src="./images/masters-img-1.jpeg"
+                  alt="барбер стрижет клиента"
+                  width="370"
+                  height="346"
+                  class="masters-img"
+                />
+                <p class="masters-cover-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dignissimos delectus odit repudiandae laborum modi tempore
+                  placeat ut magnam minima quia! Reiciendis voluptatem corrupti
+                  deleniti. Eveniet deleniti vitae distinctio tempore sed,
+                  repudiandae beatae asperiores nulla excepturi rem. Saepe
+                  assumenda accusantium hic.
+                </p>
+              </div>
+
               <h3 lang="en" class="masters-item-title">John Smith</h3>
               <p lang="en" class="masters-item-text">Extreme Barber</p>
               <ul class="masters-soc-list list">
@@ -393,5 +416,11 @@
         </ul>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close" data-modal-close>X</button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
