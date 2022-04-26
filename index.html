@@ -416,11 +416,78 @@
         </ul>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button type="button" class="modal-close" data-modal-close>X</button>
+        <p class="modal-title">Заголовок модального вікна</p>
+        <form class="modal-form">
+          <div class="form-field">
+            <label class="input-text" for="user-name">Введіть імʼя</label>
+            <input
+              type="text"
+              placeholder="Петро"
+              name="user-name"
+              class="modal-input"
+              required
+              minlength="2"
+              id="user-name"
+            />
+          </div>
+          <div class="form-field">
+            <label class="input-text" for="user-email">Введіть пошту</label>
+            <input
+              type="email"
+              placeholder="test@mail.com"
+              name="user-email"
+              class="modal-input"
+              id="user-email"
+            />
+          </div>
+          <div class="form-field">
+            <label class="input-text" for="user-tel">Введіть телефон</label>
+            <input
+              type="tel"
+              placeholder="+380 (96) 111-11-11"
+              class="modal-input"
+              name="user-tel"
+              required
+              id="user-tel"
+              value="+380"
+            />
+          </div>
+          <div class="form-field">
+            <label class="input-text" for="user-text">Введіть комент</label>
+            <textarea
+              class="modal-text"
+              name="user-text"
+              id="user-text"
+              placeholder="текст"
+            ></textarea>
+          </div>
+
+          <fieldset>
+            <legend>add</legend>
+            <label for="cheeze">cheeze</label>
+            <input type="checkbox" id="cheeze" name="add" value="cheeze" />
+            <label for="tomato">tomato</label>
+            <input type="checkbox" id="tomato" name="add" value="tomato" />
+          </fieldset>
+
+          <label for="city">city</label>
+          <select name="city" class="modal-input" id="city" multiple>
+            <option value="london">London</option>
+            <option value="paris">Paris</option>
+            <option value="novyi-rozdil">Novyi Rozdil</option>
+          </select>
+
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
+
+user-name=Name& user-email=test%40mail.ua& user-tel=%2B380961111111& user-text=&
+size=on
