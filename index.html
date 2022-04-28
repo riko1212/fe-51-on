@@ -369,6 +369,42 @@
         <div class="container">
           <section class="online">
             <h2 class="online-title title">Онлайн-запись</h2>
+            <form class="online-form">
+              <div class="online-inputs">
+                <div class="online-field">
+                  <input
+                    type="text"
+                    id="online-name"
+                    name="online-name"
+                    class="online-input"
+                    placeholder=" "
+                  />
+                  <label for="online-name" class="online-label">Имя*</label>
+                </div>
+                <div class="online-field">
+                  <input
+                    type="text"
+                    id="online-tel"
+                    name="online-tel"
+                    class="online-input"
+                    placeholder=" "
+                  />
+                  <label for="online-tel" class="online-label">Телефон*</label>
+                </div>
+              </div>
+              <div class="online-text-field">
+                <textarea
+                  name="online-comment"
+                  id="online-comment"
+                  class="online-text"
+                  placeholder=" "
+                ></textarea>
+                <label for="online-comment" class="online-label"
+                  >сообщение*</label
+                >
+              </div>
+              <button type="submit" class="btn online-btn">отправить</button>
+            </form>
           </section>
           <!-- Section-8 -->
           <section class="contacts">
@@ -416,7 +452,7 @@
         </ul>
       </div>
     </footer>
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close" data-modal-close>X</button>
         <p class="modal-title">Заголовок модального вікна</p>
@@ -435,13 +471,18 @@
           </div>
           <div class="form-field">
             <label class="input-text" for="user-email">Введіть пошту</label>
-            <input
-              type="email"
-              placeholder="test@mail.com"
-              name="user-email"
-              class="modal-input"
-              id="user-email"
-            />
+            <div class="input-wrap">
+              <input
+                type="email"
+                placeholder="test@mail.com"
+                name="user-email"
+                class="modal-input"
+                id="user-email"
+              />
+              <svg class="input-icon" width="18" height="18">
+                <use href="./images/icons/symbol-defs.svg#icon-person"></use>
+              </svg>
+            </div>
           </div>
           <div class="form-field">
             <label class="input-text" for="user-tel">Введіть телефон</label>
@@ -464,8 +505,24 @@
               placeholder="текст"
             ></textarea>
           </div>
+          <div class="form-field">
+            <input
+              type="checkbox"
+              class="modal-check visually-hidden"
+              id="modal-check"
+              name="privacy-check"
+            />
+            <label for="modal-check" class="modal-check-text">
+              <span>
+                <svg class="check-icon" width="16" height="15">
+                  <use href="./images/icons/symbol-defs.svg#icon-check"></use>
+                </svg>
+              </span>
+              Політика користування</label
+            >
+          </div>
 
-          <fieldset>
+          <!-- <fieldset>
             <legend>add</legend>
             <label for="cheeze">cheeze</label>
             <input type="checkbox" id="cheeze" name="add" value="cheeze" />
@@ -478,7 +535,7 @@
             <option value="london">London</option>
             <option value="paris">Paris</option>
             <option value="novyi-rozdil">Novyi Rozdil</option>
-          </select>
+          </select> -->
 
           <button type="submit">Submit</button>
           <button type="reset">Reset</button>
