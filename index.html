@@ -23,46 +23,47 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!-- header -->
     <header class="header">
       <div class="container">
         <a
-          class="header-logo animate__animated animate__bounce"
+          class="header__logo logo animate__animated animate__bounce"
           href="./index.html"
         >
-          <svg class="masters-soc-icon" width="66" height="55">
+          <svg class="logo__icon" width="66" height="55">
             <use href="./images/icons/symbol-defs.svg#icon-logo"></use>
           </svg>
         </a>
-        <nav class="header-nav">
-          <ul class="header-list list">
-            <li class="header-item">
-              <a href="https://www.google.com/" class="header-link link"
+        <nav class="navigation">
+          <ul class="menu-list list">
+            <li class="menu-list__item">
+              <a href="https://www.google.com/" class="menu-list__link link"
                 >О нас</a
               >
             </li>
-            <li class="header-item">
-              <a href="./portfolio.html" class="header-link link"
+            <li class="menu-list__item">
+              <a href="./portfolio.html" class="menu-list__link link"
                 >Услуги и цены</a
               >
             </li>
-            <li class="header-item">
-              <a href="#masters" class="header-link link">Мастера</a>
+            <li class="menu-list__item">
+              <a href="#masters" class="menu-list__link link">Мастера</a>
             </li>
-            <li class="header-item">
-              <a href="https://www.google.com/" class="header-link link"
+            <li class="menu-list__item">
+              <a href="https://www.google.com/" class="menu-list__link link"
                 >Контакты</a
               >
             </li>
           </ul>
         </nav>
-        <div class="header-connect">
-          <a class="header-tel link" href="tel:+380441111111"
+        <div class="connect">
+          <a class="connect__tel link" href="tel:+380441111111"
             >+38 044 111 11 11</a
           >
-          <button type="button" class="header-btn btn" data-modal-open>
+          <button type="button" class="connect__btn btn" data-modal-open>
             Онлайн-запись
           </button>
         </div>
@@ -72,23 +73,30 @@
       <!-- Section-1 -->
       <section class="hero">
         <div class="container">
-          <div class="hero-soc">
-            <ul class="hero-list list">
-              <li class="hero-item">
-                <a href="" target="_blank" class="hero-link link">Instagram</a>
+          <div class="soc">
+            <ul class="soc-list list">
+              <li class="soc-list__item">
+                <a href="" target="_blank" class="soc-list__link link"
+                  >Instagram</a
+                >
               </li>
-              <li class="hero-item">
-                <a href="" target="_blank" class="hero-link link">Youtube</a>
+              <li class="soc-list__item">
+                <a href="" target="_blank" class="soc-list__link link"
+                  >Youtube</a
+                >
               </li>
             </ul>
           </div>
 
           <div class="hero-content">
-            <p lang="en" class="hero-pre-title pre-title">
+            <p
+              lang="en"
+              class="hero-content__pre-title pre-title pre-title--light"
+            >
               A hair salon for men in Kyiv
             </p>
-            <h1 lang="en" class="hero-title">BarberShop</h1>
-            <p class="hero-after-title">
+            <h1 lang="en" class="hero-content__title">BarberShop</h1>
+            <p class="hero-content__after-title">
               Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно
               и со вкусом.
             </p>
@@ -99,7 +107,7 @@
       <section class="about">
         <div class="container">
           <ul class="about-list list">
-            <li class="about-item">
+            <li class="about-list__item">
               <img
                 src="./images/about-img-1.jpeg"
                 alt="барбер бреет шею"
@@ -107,7 +115,7 @@
                 height="445"
               />
             </li>
-            <li class="about-item">
+            <li class="about-list__item">
               <img
                 src="./images/about-img-2.jpeg"
                 alt="барбер стрижет кантик"
@@ -117,20 +125,26 @@
             </li>
           </ul>
           <div class="about-content">
-            <p class="about-pre-title pre-title">О НАС</p>
-            <h2 class="about-title title">Лучший Барбершоп твоего города</h2>
-            <p class="about-after-title after-title">
+            <p class="about-content__pre-title pre-title pre-title--dark">
+              О НАС
+            </p>
+            <h2 class="about-content__title title">
+              Лучший Барбершоп твоего города
+            </h2>
+            <p class="about-content__after-title after-title">
               Если ты хочешь добавить в свой образ больше уверенности – тебе
               точно к нам.
             </p>
-            <p class="about-text">
+            <p class="about-content__text">
               Мы команда, которая никогда не останавливается на достигнутом и
               жаждет перемен. И когда ты попадешь в руки нашего мастера, то уже
               никогда не сможешь быть прежним. Мы команда, которая всегда с
               клиентами "на одной волне". Поэтому, мы всегда готовы
               усовершенствовать каждого, кто к нам приходит!
             </p>
-            <button type="button" class="about-btn btn">Онлайн-запись</button>
+            <button type="button" class="about-content__btn btn">
+              Онлайн-запись
+            </button>
           </div>
         </div>
       </section>
