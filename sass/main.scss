@@ -1,5 +1,25 @@
 @import "./utils/vars";
 @import "./base/reset";
-
+@import "./base/common";
+@import "./utils/hidden";
+@import "./utils/placeholders";
+@import "./utils/mixins";
+/////////////////////////
+@import "./components/container";
+@import "./components/pre-title";
+@import "./components/title";
+@import "./components/btn";
+@import "./components/after-title";
+@import "./components/modal";
+/////////////////////////////
 @import "./layout/header";
 @import "./layout/hero";
+@import "./layout/about";
+@import "./layout/prices";
+@import "./layout/reasons";
+@import "./layout/masters";
+@import "./layout/gallery";
+@import "./layout/contact-wrap";
+@import "./layout/online";
+@import "./layout/contacts";
+@import "./layout/footer";

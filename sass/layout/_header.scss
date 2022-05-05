@@ -3,15 +3,14 @@
   padding-bottom: 32px;
   position: absolute;
   width: 100%;
+  .container {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .header__logo {
   margin-right: 70px;
-}
-
-.header .container {
-  display: flex;
-  align-items: center;
 }
 
 .menu-list {
@@ -34,10 +33,10 @@
   letter-spacing: 0.1em;
   color: var(--header-color);
   transition: color 300ms linear;
-}
-.menu-list__link:hover,
-.menu-list__link:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 /* .header-tel {
