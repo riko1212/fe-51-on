@@ -1,11 +1,14 @@
 .pre-title {
-  @include font(11px, 600, 1.36, 0.1em);
+  @include font(11px, 600, 1.9, 0.1em);
   // font-weight: 600;
   // font-size: 11px;
   // line-height: 1.36;
   // letter-spacing: 0.1em;
   text-transform: uppercase;
   @extend %align-items;
+  @media screen and (min-width: 768px) {
+    @include font(null, null, 1.36, null);
+  }
   &::before {
     content: "";
     width: 63px;

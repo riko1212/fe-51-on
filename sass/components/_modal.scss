@@ -18,12 +18,18 @@
   top: 50%;
   left: 50%;
   transform: rotate(360deg) translate(-50%, -50%) scale(1);
-  width: 500px;
+  width: 95vw;
   min-height: 600px;
   background-color: #ffffff;
   border-radius: 5px;
   transition: transform 300ms;
   padding: 40px;
+  @media screen and (min-width: 480px) {
+    width: 400px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 500px;
+  }
 }
 
 .modal-close {
